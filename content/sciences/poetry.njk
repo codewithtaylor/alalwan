@@ -1,0 +1,18 @@
+---
+layout: layouts/base.njk
+title: Poetry
+science: poetry
+permalink: /sciences/poetry/
+---
+
+<h2>Poetry</h2>
+
+<ul>
+{% for w in collections.works %}
+  {% if w.data.sciences and w.data.sciences.includes("poetry") %}
+    <li>
+      <a href="{{ w.url }}">{{ w.data.title }}</a>
+    </li>
+  {% endif %}
+{% endfor %}
+</ul>

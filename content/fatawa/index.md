@@ -1,7 +1,8 @@
 ---
 layout: layouts/base.njk
 title: Fatawa
-permalink: /works/fatawa/
+permalink: /fatawa/
+nav: true
 ---
 
 <ul>

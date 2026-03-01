@@ -1,4 +1,5 @@
 module.exports = function (eleventyConfig) {
+  eleventyConfig.ignores.add("CLAUDE.md");
   eleventyConfig.addPassthroughCopy("static");
 
   // Scholars
@@ -13,22 +14,18 @@ module.exports = function (eleventyConfig) {
   .filter(i => !i.inputPath.endsWith("/index.md"))
   );
 
-  // Work types
-  eleventyConfig.addCollection("books", (api) =>
-  api.getFilteredByGlob("content/works/books/*.md").filter(i => i.fileSlug !== "index")
-  );
-
   eleventyConfig.addCollection("fatawa", (api) =>
-  api.getFilteredByGlob("content/works/fatawa/*.md").filter(i => i.fileSlug !== "index")
-  );
-
-  eleventyConfig.addCollection("lectures", (api) =>
-  api.getFilteredByGlob("content/works/lectures/*.md").filter(i => i.fileSlug !== "index")
+  api.getFilteredByGlob("content/fatawa/*.md").filter(i => i.fileSlug !== "index")
   );
 
   // Sciences (the science pages themselves)
   eleventyConfig.addCollection("sciences", (api) =>
   api.getFilteredByGlob("content/sciences/*.{md,njk}").filter(i => i.fileSlug !== "index")
+  );
+
+  eleventyConfig.addCollection("poetry", (api) =>
+  api.getFilteredByGlob("content/works/poetry/*.md")
+  .filter(i => i.fileSlug !== "index")
   );
 
 

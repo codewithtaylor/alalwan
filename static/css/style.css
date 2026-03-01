@@ -5,8 +5,8 @@
 
 body {
     font-family: "EB Garamond", serif;
-    font-size: 1.15rem;
-    line-height: 1.8;
+    font-size: 1.25rem;
+    line-height: 1.2;
     color: #e2ddd5;
     background: #111;
     margin: 0;
@@ -15,7 +15,7 @@ body {
 
 /* === Layout === */
 header, main, footer {
-    max-width: 68ch;
+    max-width: 78ch;
     margin: 0 auto;
     padding: 0 1.5rem;
 }
