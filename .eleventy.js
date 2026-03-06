@@ -24,8 +24,18 @@ module.exports = function (eleventyConfig) {
   );
 
   eleventyConfig.addCollection("poetry", (api) =>
-  api.getFilteredByGlob("content/works/poetry/*.md")
-  .filter(i => i.fileSlug !== "index")
+  api.getFilteredByGlob("content/poetry/*.md")
+  .filter(i => !i.inputPath.endsWith("/index.md"))
+  );
+
+  eleventyConfig.addCollection("books", (api) =>
+  api.getFilteredByGlob("content/books/*.md")
+  .filter(i => !i.inputPath.endsWith("/index.md"))
+  );
+
+  eleventyConfig.addCollection("poets", (api) =>
+  api.getFilteredByGlob("content/poets/*.md")
+  .filter(i => !i.inputPath.endsWith("/index.md"))
   );
 
 
