@@ -179,6 +179,44 @@ p.search-result {
     margin-right: 0.6rem;
 }
 
+/* === Mobile === */
+@media (max-width: 600px) {
+    body {
+        font-size: 1.05rem;
+        line-height: 1.5;
+    }
+
+    header, main, footer {
+        padding-left: 1rem;
+        padding-right: 1rem;
+    }
+
+    header {
+        padding-top: 1.25rem;
+    }
+
+    main {
+        margin-top: 1.5rem;
+        margin-bottom: 2.5rem;
+    }
+
+    header h1 {
+        font-size: 1.6rem;
+    }
+
+    nav {
+        gap: 0.9rem;
+    }
+
+    nav a {
+        font-size: 1rem;
+    }
+
+    h1 { font-size: 1.5rem; }
+    h2 { font-size: 1.2rem; }
+    h3 { font-size: 1rem; }
+}
+
 /* === Arabic text === */
 .arabic {
     font-family: "Scheherazade New", serif;
