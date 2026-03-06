@@ -127,7 +127,7 @@ li {
     width: 100%;
     background: transparent;
     border: none;
-    border-bottom: 1px solid #2a2a2a;
+    border-bottom: 1px solid #444;
     border-radius: 0;
     color: #e2ddd5;
     font-family: inherit;
@@ -144,7 +144,7 @@ li {
 }
 
 #search-input::placeholder {
-    color: #555;
+    color: #777;
 }
 
 .search-results {
