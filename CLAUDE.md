@@ -27,17 +27,17 @@ Collections are defined in `.eleventy.js` and used in templates via `collections
 |---|---|
 | `scholars` | Files tagged `scholars` |
 | `works` | `content/works/**/*.md` (excluding index.md) |
-| `fatawa` | `content/works/fatawa/*.md` |
-| `books` | `content/works/books/*.md` |
-| `lectures` | `content/works/lectures/*.md` |
-| `poetry` | `content/works/poetry/*.md` |
-| `sciences` | `content/sciences/*.{md,njk}` |
+| `fatawa` | `content/fatawa/*.md` (excluding index) |
+| `books` | `content/books/*.md` (excluding index) |
+| `poetry` | `content/poetry/*.md` (excluding index) |
+| `poets` | `content/poets/*.md` (excluding index) |
+| `sciences` | `content/sciences/*.{md,njk}` (excluding index) |
 
 ### Content Organization
 
 **Scholars** (`content/scholars/profiles/`): Each scholar is a Markdown file. `profiles.json` sets layout, tag (`scholars`), and permalink pattern for the whole directory. Scholar files use a `scholar_id` frontmatter key (e.g., `al-barrak`) that works reference.
 
-**Works** (`content/works/`): Subdirectories by type (`books/`, `fatawa/`, `lectures/`, `poetry/`). Each work uses this frontmatter schema:
+**Works** (`content/works/`): Subdirectories by type. Each work uses this frontmatter schema:
 ```yaml
 type: fatwa          # fatwa | poem | book | lecture
 scholars: [al-barrak]  # array of scholar_id values
@@ -53,8 +53,8 @@ source: "https://..."
 
 ### Templates
 
-One shared layout: `_includes/layouts/base.njk`. It includes Google Fonts (EB Garamond for Latin, Amiri for Arabic), a site header with nav, and `{{ content | safe }}` for the page body.
+One shared layout: `_includes/layouts/base.njk`. It includes Google Fonts (EB Garamond for Latin, Scheherazade New for Arabic), a site header with nav, and `{{ content | safe }}` for the page body.
 
 ### Arabic Content
 
-Use the `.arabic` CSS class for RTL Arabic text blocks. The Amiri font is loaded for Arabic. Arabic text uses `direction: rtl` and `unicode-bidi: isolate`.
+Use the `.arabic` CSS class for RTL Arabic text blocks. The Scheherazade New font is loaded for Arabic. Arabic text uses `direction: rtl` and `unicode-bidi: isolate`.
