@@ -3,10 +3,10 @@ layout: layouts/base.njk
 title: Ta'weel
 ---
 
-This project aims to preserve knowledge with clarity, attribution, and transparency.
+A dedicated archive of the works, fatawa, and lectures of Shaykh Sulayman ibn Nasir al-Alwan.
 
 <div class="search-container">
-  <input type="search" id="search-input" placeholder="Search scholars, fatawa, poetry…" autocomplete="off">
+  <input type="search" id="search-input" placeholder="Search biography, fatawa, sciences…" autocomplete="off">
   <div class="search-results" id="search-results"></div>
 </div>
 
