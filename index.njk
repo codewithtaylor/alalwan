@@ -1,0 +1,66 @@
+---
+layout: layouts/base.njk
+title: Shaykh Sulayman al-Alwan
+---
+
+<div class="hero">
+  <p class="section-label">Islamic Knowledge Library</p>
+  <h1>Shaykh Sulayman<br>ibn Nasir al-Alwan</h1>
+  <p class="hero-sub">A curated archive of scholarly works, fatawa, and translations.</p>
+  <div class="search-container">
+    <input type="search" id="search-input" placeholder="Search fatawa, sciences, biography…" autocomplete="off">
+    <div class="search-results" id="search-results"></div>
+  </div>
+</div>
+
+<div class="browse-section">
+  <p class="section-label">Browse</p>
+  <div class="browse-grid">
+    {% for science in collections.sciences %}
+    <a href="{{ science.url }}" class="browse-card">
+      <span class="browse-card-label">Science</span>
+      {{ science.data.title }}
+    </a>
+    {% endfor %}
+    <a href="/fatawa/" class="browse-card">
+      <span class="browse-card-label">Collection</span>
+      Fatawa
+    </a>
+    <a href="/biography/" class="browse-card">
+      <span class="browse-card-label">About</span>
+      Biography
+    </a>
+  </div>
+</div>
+
+<script>
+(function () {
+  const input = document.getElementById('search-input');
+  const results = document.getElementById('search-results');
+  let index = null;
+
+  input.addEventListener('input', function () {
+    const q = this.value.trim().toLowerCase();
+    results.innerHTML = '';
+    if (!q) return;
+    if (!index) {
+      fetch('/search-index.json')
+        .then(r => r.json())
+        .then(data => { index = data; render(q); });
+    } else {
+      render(q);
+    }
+  });
+
+  function render(q) {
+    const hits = index.filter(item => item.title.toLowerCase().includes(q)).slice(0, 10);
+    if (!hits.length) {
+      results.innerHTML = '<p class="search-result">No results.</p>';
+      return;
+    }
+    results.innerHTML = hits.map(item =>
+      `<a class="search-result" href="${item.url}"><span class="result-type">${item.type}</span>${item.title}</a>`
+    ).join('');
+  }
+})();
+</script>
