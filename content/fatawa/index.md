@@ -7,8 +7,13 @@ nav: true
 
 # Fatawa
 
+<p class="page-sub">Rulings and responses from Shaykh Sulayman al-Alwan</p>
+
 <ul class="entry-list">
 {% for s in collections.fatawa | reverse %}
-  <li><a href="{{ s.url }}">{{ s.data.title }}</a></li>
+  <li><a href="{{ s.url }}">
+    {{ s.data.title }}
+    {% if s.data.source %}<span class="entry-meta">{{ s.data.source }}</span>{% endif %}
+  </a></li>
 {% endfor %}
 </ul>
