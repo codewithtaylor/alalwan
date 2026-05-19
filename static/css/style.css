@@ -33,9 +33,9 @@ html { scroll-behavior: smooth; }
 
 /* === Body === */
 body {
-  font-family: 'EB Garamond', Georgia, serif;
-  font-size: 1.15rem;
-  line-height: 1.7;
+  font-family: 'Inter', -apple-system, sans-serif;
+  font-size: 1rem;
+  line-height: 1.65;
   color: var(--text);
   background: var(--bg);
   -webkit-font-smoothing: antialiased;
@@ -254,7 +254,7 @@ li { margin-bottom: 0.4rem; }
   border-radius: var(--radius-sm);
   color: var(--text);
   font-size: 1rem;
-  font-family: 'EB Garamond', Georgia, serif;
+  font-family: 'Inter', -apple-system, sans-serif;
   line-height: 1.5;
   transition: border-color 0.15s, background 0.15s;
 }
@@ -277,8 +277,8 @@ li { margin-bottom: 0.4rem; }
   border: 1px solid var(--border);
   border-radius: var(--radius-sm);
   color: var(--text);
-  font-family: 'EB Garamond', Georgia, serif;
-  font-size: 1.05rem;
+  font-family: 'Inter', -apple-system, sans-serif;
+  font-size: 0.95rem;
   padding: 0.65rem 1rem;
   outline: none;
   transition: border-color 0.2s, background 0.2s;
