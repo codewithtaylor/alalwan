@@ -115,11 +115,8 @@ nav a {
 nav a:hover { color: var(--text); }
 
 nav a.active {
-  color: var(--text);
+  color: var(--accent);
   font-weight: 500;
-  text-decoration: underline;
-  text-underline-offset: 4px;
-  text-decoration-thickness: 1.5px;
 }
 
 /* === Theme Toggle === */
@@ -161,7 +158,6 @@ footer {
   border-top: 1px solid var(--border);
   padding-top: 1.5rem;
   padding-bottom: 2rem;
-  font-family: 'Inter', -apple-system, sans-serif;
   font-size: 0.8rem;
   color: var(--faint);
 }
@@ -189,7 +185,7 @@ h1, h2, h3 {
   font-weight: 600;
   line-height: 1.2;
   color: var(--text);
-  letter-spacing: -0.02em;
+  letter-spacing: -0.01em;
 }
 
 h1 {
@@ -200,10 +196,14 @@ h1 {
 
 h2 {
   font-size: 1.35rem;
+  font-weight: 500;
   margin-bottom: 0.6rem;
 }
 
-h3 { font-size: 1.1rem; }
+h3 {
+  font-size: 1.1rem;
+  font-weight: 500;
+}
 
 p { margin-bottom: 1.25rem; }
 p:last-child { margin-bottom: 0; }
@@ -262,7 +262,7 @@ li { margin-bottom: 0.4rem; }
   margin-top: 1.5rem;
   display: flex;
   flex-direction: column;
-  gap: 6px;
+  gap: 12px;
 }
 
 .entry-list li {
@@ -280,8 +280,8 @@ li { margin-bottom: 0.4rem; }
   border: 1px solid var(--border);
   border-radius: var(--radius-sm);
   color: var(--text);
-  font-size: 0.95rem;
-  font-family: 'Inter', -apple-system, sans-serif;
+  font-size: 1.075rem;
+  font-family: 'EB Garamond', Georgia, serif;
   line-height: 1.5;
   box-shadow: var(--shadow-sm);
   transition: border-color 0.15s, box-shadow 0.15s, background 0.15s;
@@ -399,6 +399,22 @@ p.search-result {
   font-weight: 400;
 }
 
+/* === Prose back-navigation link === */
+.prose-back {
+  display: inline-block;
+  margin-bottom: 1.75rem;
+  font-family: 'Inter', -apple-system, sans-serif;
+  font-size: 0.85rem;
+  color: var(--faint);
+  text-decoration: none;
+  transition: color 0.15s;
+}
+
+.prose-back:hover {
+  color: var(--muted);
+  text-decoration: none;
+}
+
 /* === Prose (fatawa / works reading view) === */
 .prose {
   font-family: 'EB Garamond', Georgia, serif;
@@ -423,10 +439,21 @@ p.search-result {
   margin-top: 0;
 }
 
+/* Source attribution headings (e.g. ## Source: … in fatawa) */
+.prose h2 {
+  font-size: 0.85rem;
+  font-family: 'Inter', -apple-system, sans-serif;
+  font-weight: 400;
+  color: var(--faint);
+  border-top: 1px solid var(--border);
+  padding-top: 1.25rem;
+  margin-top: 2.5rem;
+  letter-spacing: 0;
+}
+
 /* === Hero === */
 .hero {
-  padding: 3.5rem 0 3rem;
-  border-bottom: 1px solid var(--border);
+  padding: 3.5rem 0 4rem;
   margin-bottom: 3rem;
 }
 
@@ -451,7 +478,8 @@ p.search-result {
 
 .browse-grid {
   display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(160px, 1fr));
+  grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
+  max-width: 560px;
   gap: 10px;
   margin-top: 1rem;
 }

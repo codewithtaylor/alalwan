@@ -1,5 +1,6 @@
 module.exports = function (eleventyConfig) {
   eleventyConfig.ignores.add("CLAUDE.md");
+  eleventyConfig.ignores.add(".claude/**");
   eleventyConfig.addPassthroughCopy("static");
 
   // Scholars
