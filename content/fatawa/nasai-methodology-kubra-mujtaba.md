@@ -5,7 +5,7 @@ permalink: /fatawa/nasai-methodology-kubra-mujtaba/
 
 # The Methodology of Imam al-Nasa'i, and Sunan al-Kubra vs. Al-Mujtaba
 
-The questioner asks about the condition of al-Nasa'i in his *Sunan* — and secondly: why has the book not received much service [in the form of explanations and the like]? And why did al-Nasa'i not declare the condition of his book?
+The questioner asks about the condition of al-Nasa'i in his *Sunan* — and secondly: why has the book not received much service [in the form of explanations and the like]?
 
 Al-Nasa'i has no explicitly stated condition — meaning al-Nasa'i did not declare: "My condition for this book is such-and-such." But one can infer the condition of al-Nasa'i from his methodology in the book. The *Sunan* of al-Nasa'i is among the most beneficial and finest of books.
 
