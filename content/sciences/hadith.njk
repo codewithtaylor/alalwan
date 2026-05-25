@@ -1,0 +1,21 @@
+---
+layout: layouts/base.njk
+title: Hadith
+science: hadith
+permalink: /sciences/hadith/
+---
+
+<h1>Hadith</h1>
+
+<ul class="entry-list">
+{% for w in collections.works %}
+  {% if w.data.sciences and (science in w.data.sciences) %}
+    <li>
+      <a href="{{ w.url }}">
+        {{ w.data.title }}
+        {% if w.data.source %}<span class="entry-meta">{{ w.data.source }}</span>{% endif %}
+      </a>
+    </li>
+  {% endif %}
+{% endfor %}
+</ul>
