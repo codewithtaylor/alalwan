@@ -2,6 +2,7 @@ module.exports = function (eleventyConfig) {
   eleventyConfig.ignores.add("CLAUDE.md");
   eleventyConfig.ignores.add(".claude/**");
   eleventyConfig.addPassthroughCopy("static");
+  eleventyConfig.addFilter("limit", (arr, n) => arr.slice(0, n));
 
   // Scholars
   eleventyConfig.addCollection("scholars", (api) => {

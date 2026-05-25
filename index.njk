@@ -29,7 +29,7 @@ title: Shaykh Sulayman al-Alwan
 <div class="recent-section">
   <p class="section-label">Recent Fatawa</p>
   <ul class="entry-list">
-    {% for fatwa in collections.fatawa | reverse | slice(0, 5) %}
+    {% for fatwa in collections.fatawa | reverse | limit(5) %}
     <li><a href="{{ fatwa.url }}">{{ fatwa.data.title }}</a></li>
     {% endfor %}
   </ul>
