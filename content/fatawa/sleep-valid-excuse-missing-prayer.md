@@ -1,6 +1,7 @@
 ---
 title: "When Does Sleep Constitute a Valid Excuse for Missing Prayer?"
 permalink: /fatawa/sleep-valid-excuse-missing-prayer/
+sciences: [fiqh]
 ---
 
 # When Does Sleep Constitute a Valid Excuse for Missing Prayer?

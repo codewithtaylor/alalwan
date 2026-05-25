@@ -1,6 +1,7 @@
 ---
 title: "The Methodology of Imam al-Nasa'i, and Sunan al-Kubra vs. Al-Mujtaba"
 permalink: /fatawa/nasai-methodology-kubra-mujtaba/
+sciences: [hadith]
 ---
 
 # The Methodology of Imam al-Nasa'i, and Sunan al-Kubra vs. Al-Mujtaba

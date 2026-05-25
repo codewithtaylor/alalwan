@@ -18,4 +18,14 @@ permalink: /sciences/hadith/
     </li>
   {% endif %}
 {% endfor %}
+{% for w in collections.fatawa %}
+  {% if w.data.sciences and (science in w.data.sciences) %}
+    <li>
+      <a href="{{ w.url }}">
+        {{ w.data.title }}
+        {% if w.data.source %}<span class="entry-meta">{{ w.data.source }}</span>{% endif %}
+      </a>
+    </li>
+  {% endif %}
+{% endfor %}
 </ul>

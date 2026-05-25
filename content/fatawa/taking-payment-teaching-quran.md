@@ -1,6 +1,7 @@
 ---
 title: "Taking Payment for Teaching the Quran"
 permalink: /fatawa/taking-payment-teaching-quran/
+sciences: [fiqh]
 ---
 
 # Taking Payment for Teaching the Quran

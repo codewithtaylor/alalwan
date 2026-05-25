@@ -1,6 +1,7 @@
 ---
 title: "Ibn Abbas's View Regarding the Repentance of a Murderer"
 permalink: /fatawa/ibn-abbas-repentance-murderer/
+sciences: [aqeedah, fiqh]
 ---
 
 # Ibn Abbas's View Regarding the Repentance of a Murderer

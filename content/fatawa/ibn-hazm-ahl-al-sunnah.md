@@ -1,6 +1,7 @@
 ---
 title: "Did Ibn Hazm Oppose Ahl al-Sunnah?"
 permalink: /fatawa/ibn-hazm-ahl-al-sunnah/
+sciences: [aqeedah]
 ---
 
 # Did Ibn Hazm Oppose Ahl al-Sunnah?

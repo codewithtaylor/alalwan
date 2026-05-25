@@ -1,6 +1,7 @@
 ---
 title: "The Hadith of al-Bara' on the Torment of the Grave, and the Ruling on al-Ladd"
 permalink: /fatawa/hadith-al-bara-torment-grave-ruling-al-ladd/
+sciences: [hadith, aqeedah]
 ---
 
 # The Hadith of al-Bara' on the Torment of the Grave, and the Ruling on al-Ladd
