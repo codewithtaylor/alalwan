@@ -22,7 +22,7 @@ module.exports = function (eleventyConfig) {
 
   // Sciences (the science pages themselves)
   eleventyConfig.addCollection("sciences", (api) =>
-  api.getFilteredByGlob("content/sciences/*.{md,njk}").filter(i => i.fileSlug !== "index")
+  api.getFilteredByGlob("content/sciences/*.{md,njk}").filter(i => !i.inputPath.endsWith("/index.md"))
   );
 
   eleventyConfig.addCollection("poetry", (api) =>
