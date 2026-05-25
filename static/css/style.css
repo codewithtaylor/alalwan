@@ -517,6 +517,26 @@ p.search-result {
   margin-bottom: 0.25rem;
 }
 
+/* === Recent section (homepage) === */
+.recent-section {
+  margin-bottom: 3.5rem;
+}
+
+.view-all {
+  display: inline-block;
+  margin-top: 1rem;
+  font-family: 'Inter', -apple-system, sans-serif;
+  font-size: 0.85rem;
+  color: var(--faint);
+  text-decoration: none;
+  transition: color 0.15s;
+}
+
+.view-all:hover {
+  color: var(--accent);
+  text-decoration: none;
+}
+
 /* === Mobile menu button === */
 .menu-toggle {
   display: none;

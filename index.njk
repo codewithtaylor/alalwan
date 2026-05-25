@@ -26,6 +26,16 @@ title: Shaykh Sulayman al-Alwan
   </div>
 </div>
 
+<div class="recent-section">
+  <p class="section-label">Recent Fatawa</p>
+  <ul class="entry-list">
+    {% for fatwa in collections.fatawa | reverse | slice(0, 5) %}
+    <li><a href="{{ fatwa.url }}">{{ fatwa.data.title }}</a></li>
+    {% endfor %}
+  </ul>
+  <a href="/fatawa/" class="view-all">View all fatawa →</a>
+</div>
+
 <script>
 (function () {
   const input = document.getElementById('search-input');
