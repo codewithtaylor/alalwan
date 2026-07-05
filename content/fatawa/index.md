@@ -9,6 +9,8 @@ nav: true
 
 <p class="page-sub">Rulings and responses from Shaykh Sulayman al-Alwan</p>
 
+<p><a href="/fatawa/sessions/">Browse by session</a></p>
+
 <ul class="entry-list">
 {% for s in collections.fatawa | reverse %}
   <li><a href="{{ s.url }}">

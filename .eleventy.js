@@ -20,6 +20,16 @@ module.exports = function (eleventyConfig) {
   api.getFilteredByGlob("content/fatawa/*.md").filter(i => !i.inputPath.endsWith("/index.md"))
   );
 
+  eleventyConfig.addCollection("sessions", (api) => {
+    const nums = new Set(
+      api.getFilteredByGlob("content/fatawa/*.md")
+        .filter(i => !i.inputPath.endsWith("/index.md"))
+        .map(i => i.data.session)
+        .filter(Boolean)
+    );
+    return [...nums].sort((a, b) => a - b);
+  });
+
   // Sciences (the science pages themselves)
   eleventyConfig.addCollection("sciences", (api) =>
   api.getFilteredByGlob("content/sciences/*.{md,njk}").filter(i => !i.inputPath.endsWith("/index.md"))

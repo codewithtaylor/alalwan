@@ -1,5 +1,6 @@
 ---
 title: "The Boundaries of the Arabian Peninsula and the Status of Non-Muslims Within It"
+session: 40
 permalink: /fatawa/arabian-peninsula-boundaries-non-muslims/
 sciences: [fiqh]
 ---

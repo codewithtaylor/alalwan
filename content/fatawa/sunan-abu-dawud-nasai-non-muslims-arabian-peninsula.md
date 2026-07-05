@@ -1,5 +1,6 @@
 ---
 title: "Sunan Abu Dawud and Sunan al-Nasa'i: Which to Prioritise, and the Status of Non-Muslims in the Arabian Peninsula"
+session: 40
 permalink: /fatawa/sunan-abu-dawud-nasai-non-muslims-arabian-peninsula/
 sciences: [hadith, fiqh]
 ---

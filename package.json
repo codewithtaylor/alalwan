@@ -5,13 +5,14 @@
   "main": "index.js",
   "scripts": {
     "start": "npx eleventy --serve",
-    "build": "npx eleventy" 
+    "build": "npx eleventy"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "type": "commonjs",
   "devDependencies": {
-    "@11ty/eleventy": "^3.1.2"
+    "@11ty/eleventy": "^3.1.2",
+    "wrangler": "^4.95.0"
   }
 }

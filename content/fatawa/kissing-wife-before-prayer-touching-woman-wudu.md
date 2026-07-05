@@ -1,5 +1,6 @@
 ---
 title: "Question on Whether Kissing One's Wife Before Prayer is Sunnah, and Whether Touching a Woman Breaks Wudu"
+session: 40
 permalink: /fatawa/kissing-wife-before-prayer-touching-woman-wudu/
 sciences: [fiqh, hadith]
 ---

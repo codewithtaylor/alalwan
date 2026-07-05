@@ -1,5 +1,6 @@
 ---
 title: "Taking Payment for Teaching the Quran"
+session: 40
 permalink: /fatawa/taking-payment-teaching-quran/
 sciences: [fiqh]
 ---

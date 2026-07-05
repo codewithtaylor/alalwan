@@ -1,0 +1,18 @@
+---
+layout: layouts/base.njk
+pagination:
+  data: sessions
+  size: 1
+  alias: session
+permalink: /fatawa/sessions/{{ session.number }}/
+---
+
+<h1>{{ session.name }}</h1>
+
+<ul class="entry-list">
+{% for f in collections.fatawa %}
+  {% if f.data.session == session.number %}
+    <li><a href="{{ f.url }}">{{ f.data.title }}</a></li>
+  {% endif %}
+{% endfor %}
+</ul>

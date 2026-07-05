@@ -1,5 +1,6 @@
 ---
 title: "The Rulings of the Condolence Visit, Preparing Food for the Bereaved, and Gathering at the Home of the Deceased"
+session: 40
 permalink: /fatawa/condolence-visit-food-bereaved-gathering-deceased/
 sciences: [fiqh]
 ---
