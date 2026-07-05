@@ -4,9 +4,7 @@ title: Sciences
 permalink: /sciences/
 ---
 
-# Sciences
-
-<p class="page-sub">Browse works and fatawa by subject</p>
+Browse by science:
 
 <ul class="entry-list">
 {% for s in collections.sciences %}
