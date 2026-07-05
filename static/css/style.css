@@ -295,6 +295,43 @@ li { margin-bottom: 0.4rem; }
   color: var(--text);
 }
 
+.entry-list.reversed {
+  flex-direction: column-reverse;
+}
+
+/* === Sort toggle === */
+.sort-toggle {
+  display: inline-flex;
+  gap: 4px;
+  margin-top: 0.75rem;
+  padding: 3px;
+  background: var(--surface2);
+  border: 1px solid var(--border);
+  border-radius: var(--radius-sm);
+}
+
+.sort-toggle button {
+  font-family: 'Inter', sans-serif;
+  font-size: 0.85rem;
+  padding: 0.35rem 0.75rem;
+  border: none;
+  border-radius: calc(var(--radius-sm) - 3px);
+  background: transparent;
+  color: var(--text);
+  cursor: pointer;
+  transition: background 0.15s, color 0.15s;
+}
+
+.sort-toggle button:hover {
+  color: var(--accent);
+}
+
+.sort-toggle button.active {
+  background: var(--surface);
+  color: var(--accent);
+  box-shadow: var(--shadow-sm);
+}
+
 /* === Search === */
 .search-container {
   margin-top: 2rem;
