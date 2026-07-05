@@ -1,6 +1,7 @@
 ---
 title: "Does the Prayer Time of a Resident Determine Whether He Prays Full or Shortened as a Traveller?"
 session: 40
+date_added: 2026-07-05
 permalink: /fatawa/prayer-time-resident-traveller-full-shortened/
 sciences: [fiqh]
 ---

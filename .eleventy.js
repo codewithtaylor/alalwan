@@ -3,6 +3,9 @@ module.exports = function (eleventyConfig) {
   eleventyConfig.ignores.add(".claude/**");
   eleventyConfig.addPassthroughCopy("static");
   eleventyConfig.addFilter("limit", (arr, n) => arr.slice(0, n));
+  eleventyConfig.addFilter("readableDate", (date) =>
+  new Date(date).toLocaleDateString("en-US", { year: "numeric", month: "long", day: "numeric", timeZone: "UTC" })
+  );
 
   // Scholars
   eleventyConfig.addCollection("scholars", (api) => {
@@ -19,7 +22,7 @@ module.exports = function (eleventyConfig) {
   eleventyConfig.addCollection("fatawa", (api) =>
   api.getFilteredByGlob("content/fatawa/*.md")
   .filter(i => !i.inputPath.endsWith("/index.md"))
-  .sort((a, b) => (a.data.session || 0) - (b.data.session || 0))
+  .sort((a, b) => new Date(a.data.date_added) - new Date(b.data.date_added))
   );
 
   eleventyConfig.addCollection("sessions", (api) => {

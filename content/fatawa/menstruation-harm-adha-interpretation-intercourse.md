@@ -1,6 +1,7 @@
 ---
 title: "Refuting the Claim That Intercourse With a Menstruating Woman Is Permissible if No Harm Results"
 session: 1
+date_added: 2026-07-05
 permalink: /fatawa/menstruation-harm-adha-interpretation-intercourse/
 sciences: [fiqh]
 ---

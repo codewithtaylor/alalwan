@@ -1,6 +1,7 @@
 ---
 title: "Ibn Abbas's View Regarding the Repentance of a Murderer"
 session: 40
+date_added: 2026-04-19
 permalink: /fatawa/ibn-abbas-repentance-murderer/
 sciences: [aqeedah, fiqh]
 ---

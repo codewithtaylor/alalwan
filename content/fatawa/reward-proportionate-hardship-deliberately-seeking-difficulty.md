@@ -1,6 +1,7 @@
 ---
 title: "Reward is Proportionate to Hardship, But Deliberately Seeking Difficulty Has No Basis"
 session: 1
+date_added: 2026-07-05
 permalink: /fatawa/reward-proportionate-hardship-deliberately-seeking-difficulty/
 sciences: [fiqh]
 ---

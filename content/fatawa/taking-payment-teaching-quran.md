@@ -1,6 +1,7 @@
 ---
 title: "Taking Payment for Teaching the Quran"
 session: 40
+date_added: 2026-05-02
 permalink: /fatawa/taking-payment-teaching-quran/
 sciences: [fiqh]
 ---

@@ -1,6 +1,7 @@
 ---
 title: "Is the Lightness of the Funeral Bier Evidence of the Deceased's Loftiness of Rank?"
 session: 40
+date_added: 2026-07-05
 permalink: /fatawa/lightness-funeral-bier-evidence-rank/
 sciences: [aqeedah]
 ---

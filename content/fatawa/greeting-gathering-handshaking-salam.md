@@ -1,6 +1,7 @@
 ---
 title: "The Prophet's Guidance on Greeting When Entering a Gathering — Handshaking and Salam"
 session: 40
+date_added: 2026-07-05
 permalink: /fatawa/greeting-gathering-handshaking-salam/
 sciences: [fiqh]
 ---

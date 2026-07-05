@@ -2,6 +2,7 @@
 layout: layouts/base.njk
 ---
 <a href="/fatawa/" class="prose-back">&#8592; Back to Fatawa</a>
+{% if date_added %}<p class="entry-meta">Added {{ date_added | readableDate }}</p>{% endif %}
 <div class="prose">
   {{ content | safe }}
 </div>

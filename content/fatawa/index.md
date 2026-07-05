@@ -20,7 +20,7 @@ nav: true
 {% for s in collections.fatawa %}
   <li><a href="{{ s.url }}">
     {{ s.data.title }}
-    {% if s.data.source %}<span class="entry-meta">{{ s.data.source }}</span>{% endif %}
+    {% if s.data.date_added %}<span class="entry-meta">{{ s.data.date_added | readableDate }}</span>{% endif %}
   </a></li>
 {% endfor %}
 </ul>
