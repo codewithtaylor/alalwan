@@ -17,7 +17,9 @@ module.exports = function (eleventyConfig) {
   );
 
   eleventyConfig.addCollection("fatawa", (api) =>
-  api.getFilteredByGlob("content/fatawa/*.md").filter(i => !i.inputPath.endsWith("/index.md"))
+  api.getFilteredByGlob("content/fatawa/*.md")
+  .filter(i => !i.inputPath.endsWith("/index.md"))
+  .sort((a, b) => (a.data.session || 0) - (b.data.session || 0))
   );
 
   eleventyConfig.addCollection("sessions", (api) => {
